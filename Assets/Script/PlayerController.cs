@@ -33,15 +33,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (!Grounded())
-        {
-            if (transform.eulerAngles.x <= 45f)
-            {
-                print("Rotating");
-                transform.rotation = Quaternion.Euler(transform.rotation.x + (1f * rotationSpeed), transform.rotation.y, transform.rotation.z);
-            }
-        }
-
         if (Input.GetKey(KeyCode.W))
         {
             if (Grounded())
