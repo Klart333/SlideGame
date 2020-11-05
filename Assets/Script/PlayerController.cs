@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private float slideSpeed = 10f;
     [SerializeField]
     private float reverseSpeed = -5f;
+    [SerializeField]
+    private float rotationSpeed = 1;
 
     private new Rigidbody rigidbody;
 
@@ -31,7 +33,15 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        print(Grounded());
+        if (!Grounded())
+        {
+            if (transform.eulerAngles.x <= 45f)
+            {
+                print("Rotating");
+                transform.rotation = Quaternion.Euler(transform.rotation.x + (1f * rotationSpeed), transform.rotation.y, transform.rotation.z);
+            }
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
             if (Grounded())
