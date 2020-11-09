@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private LayerMask layerMask;
 
     [SerializeField]
-    private float airSpeed = 5f;
+    private float airSpeed = 2.5f;
     [SerializeField]
     private float slideSpeed = 10f;
     [SerializeField]
@@ -55,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer(float speed)
     {
-        rigidbody.velocity += transform.forward * speed;
+        rigidbody.velocity += transform.forward * speed * Time.deltaTime;
     }
 
     private bool Grounded()

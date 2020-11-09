@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8611695529688881933}
   - component: {fileID: 2615163921045222107}
   m_Layer: 0
-  m_Name: NebulaSkinFlytGubbe
+  m_Name: Nebula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,6 +128,6 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  airSpeed: 0.1
-  slideSpeed: 0.5
-  reverseSpeed: -0.2
+  airSpeed: 10
+  slideSpeed: 50
+  reverseSpeed: -20

@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168965211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.805, z: -1.73}
+  m_LocalPosition: {x: 0, y: 2.774, z: -1.738}
   m_LocalScale: {x: 1, y: 1, z: 2.0228307}
   m_Children: []
   m_Father: {fileID: 9072668931689680328}
@@ -212,13 +212,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552154758}
-  m_LocalRotation: {x: -0.25504115, y: -0.6595105, z: 0.25504115, w: -0.6595105}
-  m_LocalPosition: {x: 0.1158, y: 0.0494, z: -0.0028}
+  m_LocalRotation: {x: -0.25728488, y: -0.6586384, z: 0.25728488, w: -0.6586384}
+  m_LocalPosition: {x: 0.11530009, y: 0.0488, z: -0.0027999973}
   m_LocalScale: {x: 0.08, y: 0.04599999, z: 0.21205997}
   m_Children: []
   m_Father: {fileID: 841736582492808740}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 42.284, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.674004, y: 90.00001, z: 0}
 --- !u!33 &552154762
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -277,8 +277,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 0.99183893}
+  m_Center: {x: -3.414064e-10, y: -0.0000000029169116, z: 0.004080414}
 --- !u!1 &553086199
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553086199}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 0.0113, y: 0.1134, z: -0.0028}
+  m_LocalPosition: {x: 0.0108, y: 0.1128, z: -0.0028}
   m_LocalScale: {x: 0.08645416, y: 0.04971113, z: 0.08645416}
   m_Children: []
   m_Father: {fileID: 841736582492808740}
@@ -370,8 +370,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.991091, z: 0.9756682}
-  m_Center: {x: -0.0000000014502819, y: -0.0044545033, z: -0.012165848}
+  m_Size: {x: 1, y: 0.991091, z: 0.9050841}
+  m_Center: {x: 0.000000002756812, y: -0.0044545033, z: 0.023125816}
 --- !u!1 &838636883
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838636883}
   m_LocalRotation: {x: 0.14763857, y: -0, z: -0, w: 0.9890414}
-  m_LocalPosition: {x: 0, y: -0.013, z: 2.524}
+  m_LocalPosition: {x: 0, y: -0.044000015, z: 2.516}
   m_LocalScale: {x: 1, y: 1, z: 2.0228307}
   m_Children: []
   m_Father: {fileID: 9072668931689680328}
@@ -623,8 +623,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.2708638, y: 1.5825882, z: 2.623664}
+  m_Center: {x: -0.009119967, y: 0.29129463, z: 0.81183165}
 --- !u!114 &1136195570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,7 +665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273141415}
   m_LocalRotation: {x: 0.36068264, y: -0, z: -0, w: 0.93268865}
-  m_LocalPosition: {x: 0, y: 1.381, z: 0.678}
+  m_LocalPosition: {x: 0, y: 1.35, z: 0.67}
   m_LocalScale: {x: 1, y: 1, z: 4.61}
   m_Children: []
   m_Father: {fileID: 9072668931689680328}
@@ -834,7 +834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 841736582492808740}
   m_Layer: 0
-  m_Name: Slide2
+  m_Name: Slide1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -855,7 +855,7 @@ Transform:
   - {fileID: 552154759}
   - {fileID: 553086200}
   m_Father: {fileID: 2937171694467627138}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &1291726597507931848
 GameObject:
@@ -977,8 +977,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 9072668931689680328}
   - {fileID: 841736582492808740}
+  - {fileID: 9072668931689680328}
   - {fileID: 4943448675317480927}
   - {fileID: 876545018}
   - {fileID: 1136195566}
@@ -1188,7 +1188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9072668931689680328}
   m_Layer: 0
-  m_Name: Slide1
+  m_Name: Slide2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1210,5 +1210,5 @@ Transform:
   - {fileID: 168965212}
   - {fileID: 838636884}
   m_Father: {fileID: 2937171694467627138}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
