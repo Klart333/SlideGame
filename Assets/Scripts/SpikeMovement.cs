@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeMovement : MonoBehaviour, IDestructable
+public class SpikeMovement : MonoBehaviour, IHittable
 {
     [SerializeField]
     private float movementSpeed = 5f;
+
+    private float hitSpeed = 100;
 
     private new Rigidbody rigidbody;
     private void Awake()
@@ -17,8 +19,8 @@ public class SpikeMovement : MonoBehaviour, IDestructable
         rigidbody.velocity = new Vector3(Mathf.Sin(Time.time), 0, 0) * movementSpeed;
     }
 
-    public void Destroy()
+    public void Hit(Transform hitBy)
     {
-        Destroy(gameObject);
+        rigidbody.velocity = -hitBy.forward * hitSpeed;
     }
 }

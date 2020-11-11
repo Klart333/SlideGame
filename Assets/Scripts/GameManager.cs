@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -14,6 +13,8 @@ public class GameManager : MonoBehaviour
     private float timerWeight = 1;
 
     public event Action<GameObject> OnplayerInitiated = delegate { };
+
+    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(savedVelocity, 3)) / (levelTimer * timerWeight)); } }
 
     public bool isOnGoalStretch = false;
     public float savedVelocity = 0;
@@ -67,7 +68,6 @@ public class GameManager : MonoBehaviour
 
             SpawnPlayer();
         }
-
     }
 
     private void SetPlayButtons()
@@ -98,16 +98,14 @@ public class GameManager : MonoBehaviour
 
     private void LightStars()
     {
-        FindObjectOfType<UIStarManager>().LightUpStars(lastLevelIndex, CalculateScore(savedVelocity));
+        FindObjectOfType<UIStarManager>().LightUpStars(lastLevelIndex, Score);
     }
 
     private void ShowScore()
     {
-        FindObjectOfType<UIPlayerScore>().PrintScore(CalculateScore(savedVelocity));
-    }
+        FindObjectOfType<UIPlayerScore>().PrintScore(Score);
 
-    private int CalculateScore(float velocity)
-    {
-        return Mathf.RoundToInt((Mathf.Pow(velocity, 3)) / (levelTimer * timerWeight));
+        GameObject.Find("PlayerSpeedText").GetComponent<TextMeshProUGUI>().text = (Mathf.RoundToInt(savedVelocity * 10f) / 10f).ToString();
+        GameObject.Find("PlayerTimeText").GetComponent<TextMeshProUGUI>().text = (Mathf.RoundToInt(levelTimer * 10f) / 10f).ToString();
     }
 }

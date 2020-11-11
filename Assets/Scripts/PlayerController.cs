@@ -60,12 +60,4 @@ public class PlayerController : MonoBehaviour
     {
         return Physics.Raycast(transform.position, Vector3.down, rayDistance, layerMask);
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.GetComponent<IDestructable>() != null)
-        {
-            collision.collider.GetComponent<IDestructable>().Destroy();
-        }
-    }
 }

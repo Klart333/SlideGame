@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IDestructable
+public interface IHittable
 {
-    void Destroy();
+    void Hit(Transform hitBy);
 }
