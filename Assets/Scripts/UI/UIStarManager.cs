@@ -8,17 +8,22 @@ public class UIStarManager : MonoBehaviour
     [SerializeField]
     private Sprite starFillImage;
 
+    [SerializeField]
+    private GameObject rewardLootBox;
+
     private Image[] starImages;
 
     private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>();
 
     private int[] levelOneStars = new int[4] { 500, 1000, 1500, 2000 }; // Fourth for a chest
+    private int[] levelTwoStars = new int[4] { 1000, 1500, 2000, 2250 }; 
 
     private void Awake()
     {
         starImages = GetComponentsInChildren<Image>();
 
         levelDictionary.Add(1, levelOneStars);
+        levelDictionary.Add(2, levelTwoStars);
     }
 
     public void LightUpStars(int level, float score)
@@ -40,6 +45,7 @@ public class UIStarManager : MonoBehaviour
         {
             if (i == 4)
             {
+                Instantiate(rewardLootBox, new Vector3(0, 1, 0), Quaternion.identity);
                 LootBoxAmount.SetLootBoxAmount(1);
                 break;
             }

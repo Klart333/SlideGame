@@ -23,7 +23,7 @@ public class EnterGoal : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("ScoreScene");
     }
 
 }

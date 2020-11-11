@@ -47,8 +47,9 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneChanged(Scene currentScene, Scene sceneToBe)
     {
-        if (sceneToBe.buildIndex == 2)
+        if (sceneToBe.name == "ScoreScene")
         {
+            SetPlayButtons();
             LightStars();
             ShowScore();
             return;
@@ -67,6 +68,12 @@ public class GameManager : MonoBehaviour
             SpawnPlayer();
         }
 
+    }
+
+    private void SetPlayButtons()
+    {
+        GameObject.Find("PlayAgainText").GetComponent<UILoadScene>().sceneToLoadIndex = lastLevelIndex;
+        GameObject.Find("NextLevelText").GetComponent<UILoadScene>().sceneToLoadIndex = lastLevelIndex + 1;
     }
 
     private void SpawnPlayer()
