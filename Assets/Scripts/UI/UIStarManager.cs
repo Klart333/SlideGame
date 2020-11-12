@@ -11,13 +11,16 @@ public class UIStarManager : MonoBehaviour
     [SerializeField]
     private GameObject rewardLootBox;
 
+    [SerializeField]
+    private GameObject alreadyGotText;
+
     private Image[] starImages;
 
     private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>();
 
     private int[] levelOneStars = new int[4] { 3000, 4000, 4500, 5000 }; // Fourth for a chest
     private int[] levelTwoStars = new int[4] { 7000, 7500, 8000, 8700 }; 
-    private int[] levelThreeStars = new int[4] { 1000, 2000, 3000, 4000 }; 
+    private int[] levelThreeStars = new int[4] { 3000, 5000, 6000, 7500 }; 
 
     private void Awake()
     {
@@ -48,11 +51,24 @@ public class UIStarManager : MonoBehaviour
             if (i == 4)
             {
                 Instantiate(rewardLootBox, new Vector3(0, 1, 0), Quaternion.identity);
-                LootBoxAmount.SetLootBoxAmount(1);
+
+                if (LevelData.GetLevelData(level).hasChest == false)
+                {
+                    LootBoxAmount.SetLootBoxAmount(1);
+                }
+                else
+                {
+                    alreadyGotText.SetActive(true);
+                }
+
                 break;
             }
 
             starImages[i].sprite = starFillImage;
         }
+
+        LevelData.SaveLevelData(level, Mathf.Clamp(length, 0, 3), length >= 4);
+        print(length >= 4);
+        print(LevelData.GetLevelData(level).hasChest);
     }
 }

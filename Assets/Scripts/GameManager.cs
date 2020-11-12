@@ -92,8 +92,6 @@ public class GameManager : MonoBehaviour
 
         GameObject gmPlayer = Instantiate(prefab, new Vector3(0, 15, -15), prefab.transform.rotation);
         OnplayerInitiated(gmPlayer);
-
-        print("Player Initiated");
     }
 
     private void LightStars()
