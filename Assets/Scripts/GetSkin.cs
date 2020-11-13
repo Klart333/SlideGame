@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 public static class GetSkin
 {
-    public static List<string> allSkins = new List<string>() { "Default", "Nebula" };
+    public static List<string> allSkins = new List<string>() { "Default", "Nebula", "Beach" };
     public static string GetActiveSkin()
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))

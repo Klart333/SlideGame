@@ -280,6 +280,7 @@ MonoBehaviour:
   skins:
   - {fileID: 1986257207274370330, guid: 8861f87803d2fe3479c86706bde09e03, type: 3}
   - {fileID: 1496159781546221309, guid: 09b67bdcc910ba44589825e4d7e3ec1d, type: 3}
+  - {fileID: 1047728409913830051, guid: e0462d6b19aa17c49acd194c094118bb, type: 3}
 --- !u!114 &-7676200213825853553
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,9 +18,9 @@ public class UIStarManager : MonoBehaviour
 
     private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>();
 
-    private int[] levelOneStars = new int[4] { 3000, 4000, 4500, 5000 }; // Fourth for a chest
-    private int[] levelTwoStars = new int[4] { 7000, 7500, 8000, 8700 }; 
-    private int[] levelThreeStars = new int[4] { 3000, 5000, 6000, 7500 }; 
+    private int[] levelOneStars = new int[4] { 1000, 3000, 4000, 5000 }; // Fourth for a chest
+    private int[] levelTwoStars = new int[4] { 5000, 7000, 8000, 8700 }; 
+    private int[] levelThreeStars = new int[4] { 2500, 4000, 6000, 7500 }; 
 
     private void Awake()
     {
