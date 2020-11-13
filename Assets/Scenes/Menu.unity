@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoadIndex: 0
-  sceneToLoadName: ScoreScene
+  sceneToLoadName: LootBoxScene
 --- !u!1 &106846574
 GameObject:
   m_ObjectHideFlags: 0
