@@ -19,7 +19,7 @@ public class UIStarManager : MonoBehaviour
 
     private int[] levelOneStars = new int[4] { 1000, 3000, 4000, 5000 }; // Fourth for a chest
     private int[] levelTwoStars = new int[4] { 5000, 7000, 8000, 8700 }; 
-    private int[] levelThreeStars = new int[4] { 2500, 4000, 6000, 7500 }; 
+    private int[] levelThreeStars = new int[4] { 5000, 10000, 15000, 22000 }; 
     private int[] levelFourStars = new int[4] { 300, 500, 700, 1000 }; 
 
     private void Awake()
