@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private LayerMask layerMask;
 
-    private float rayDistance = 0.4f;
+    private float rayDistance = 0.5f;
     private float airSpeed = 6f;
     private float slideSpeed = 50f;
     private float reverseSpeed = -20f;
