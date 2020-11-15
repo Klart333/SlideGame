@@ -4,8 +4,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 public static class GetSkin
 {
-    public static List<string> allSkins = new List<string>() { "Default", "Nebula", "Beach", "Fashionista", "Caveman" };
-    public static string GetActiveSkin()
+    public static List<Skin> allSkins = new List<Skin>() { new Skin("Default", Rarity.Common), new Skin("Nebula", Rarity.WellDone), new Skin("Beach", Rarity.Rare), new Skin("Fashionista", Rarity.Rare), new Skin("Caveman", Rarity.Rare) };
+    public static Skin GetActiveSkin()
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))
         {
@@ -20,11 +20,11 @@ public static class GetSkin
         else
         {
             Debug.LogError("Skins not initialized");
-            return null;
+            return new Skin();
         }
     }
 
-    public static List<string> GetAllUnlockedSkins()
+    public static List<Skin> GetAllUnlockedSkins()
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))
         {

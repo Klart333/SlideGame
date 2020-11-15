@@ -78,12 +78,12 @@ public class GameManager : MonoBehaviour
 
     private void SpawnPlayer()
     {
-        string activeSkin = GetSkin.GetActiveSkin();
+        Skin activeSkin = GetSkin.GetActiveSkin();
         GameObject prefab = null;
 
         foreach (GameObject player in players)
         {
-            if (player.name == activeSkin)
+            if (player.name == activeSkin.name)
             {
                 prefab = player;
                 break;

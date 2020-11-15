@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class UISetActiveSkin : MonoBehaviour
 {
-    public string skin;
+    public Skin skin;
 
     public void SetActiveSkin()
     {

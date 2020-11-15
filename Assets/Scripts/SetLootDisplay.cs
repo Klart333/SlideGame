@@ -19,11 +19,11 @@ public class SetLootDisplay : MonoBehaviour
                 }
             }
         }
-        else if (loot.skin != "")
+        else if (loot.skin.name != "")
         {
             foreach (var item in prefabs)
             {
-                if (item.name == loot.skin)
+                if (item.name == loot.skin.name)
                 {
                     prefab = item;
                     break;

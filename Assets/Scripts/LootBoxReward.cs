@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LootBoxReward : MonoBehaviour
 {
@@ -15,7 +12,7 @@ public class LootBoxReward : MonoBehaviour
 
     private void GiveLoot()
     {
-        Loot loot = new Loot(0, "");
+        Loot loot = new Loot(0, new Skin());
         if (UnityEngine.Random.Range(1, 3) == 1)
         {
             loot.money = UnityEngine.Random.Range(5, 50);
@@ -24,7 +21,6 @@ public class LootBoxReward : MonoBehaviour
         {
             loot.skin = GetRandomSkin();
         }
-
 
         if (GetSkin.allSkins.Contains(loot.skin))
         {
@@ -41,7 +37,7 @@ public class LootBoxReward : MonoBehaviour
         Destroy(gameObject.transform.parent.gameObject, 3);
     }
 
-    private string GetRandomSkin()
+    private Skin GetRandomSkin()
     {
         return GetSkin.allSkins[UnityEngine.Random.Range(0, GetSkin.allSkins.Count)];
     }

@@ -4,7 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 public class SkinInitialization : MonoBehaviour
 {
-    private void Awake()
+    private void Start()
     {
         if (!File.Exists(Application.persistentDataPath + "/SkinData.Main"))
         {
@@ -19,8 +19,8 @@ public class SkinInitialization : MonoBehaviour
         FileStream file = File.Create(Application.persistentDataPath + "/SkinData.Main");
         SkinData skinData = new SkinData();
 
-        skinData.activeSkin = "Default";
-        skinData.unlockedSkins = new List<string>() { "Default" };
+        skinData.activeSkin = new Skin("Default", Rarity.Common);
+        skinData.unlockedSkins = new List<Skin>() { new Skin("Default", Rarity.Common) };
 
         bf.Serialize(file, skinData);
         file.Close();

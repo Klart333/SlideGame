@@ -49,8 +49,7 @@ public class PlayerController : MonoBehaviour
 
     private bool Grounded()
     {
-        bool ray = Physics.Raycast(transform.position, Vector3.down + transform.forward, rayDistance, layerMask);
-        Debug.DrawRay(transform.position, Vector3.down + transform.forward, new Color(1, 0, 0, 1), 100);
-        return ray;
+        bool rayHit = Physics.Raycast(transform.position, Vector3.down + transform.forward, rayDistance, layerMask);
+        return rayHit;
     }
 }

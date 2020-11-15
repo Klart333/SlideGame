@@ -4,7 +4,7 @@ using System.IO;
 
 public static class SaveSkin
 {
-    public static void SaveASkin(string skin)
+    public static void SaveASkin(Skin skin)
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))
         {
@@ -31,7 +31,7 @@ public static class SaveSkin
         }
     }
 
-    public static void SetActiveSkin(string skin)
+    public static void SetActiveSkin(Skin skin)
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))
         {

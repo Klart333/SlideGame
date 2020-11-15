@@ -20,7 +20,7 @@ public class UISelectSkinDisplay : MonoBehaviour
         anchorMin = new Vector2(0.02f, 0.05f);
         anchorMax = new Vector2(0.252f, 0.95f);
 
-        foreach (string skin in GetSkin.GetAllUnlockedSkins())
+        foreach (Skin skin in GetSkin.GetAllUnlockedSkins())
         {
             GameObject gmSkinPanel = Instantiate(skinPanel, transform);
 
