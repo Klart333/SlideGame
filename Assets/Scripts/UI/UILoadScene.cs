@@ -2,11 +2,11 @@
 using UnityEngine.SceneManagement;
 public class UILoadScene : MonoBehaviour
 {
+    [Header("Pick One")]
     [SerializeField]
     public int sceneToLoadIndex = 0;
 
     [SerializeField]
-    [Header("Optional")]
     private string sceneToLoadName = "";
     public void OnButtonClicked()
     {

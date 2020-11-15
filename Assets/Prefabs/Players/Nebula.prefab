@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3732390750186793957}
   - component: {fileID: 1452669081747889967}
   - component: {fileID: -6519800084244454253}
-  - component: {fileID: -8611695529688881933}
+  - component: {fileID: 4000118019551171234}
   - component: {fileID: 2615163921045222107}
   m_Layer: 0
   m_Name: Nebula
@@ -93,14 +93,14 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 1
-  m_AngularDrag: 20
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &-8611695529688881933
-BoxCollider:
+--- !u!136 &4000118019551171234
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,9 +109,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.078136116, y: 0.08212849, z: 0.17191514}
-  m_Center: {x: 0.0023225993, y: -0.0015032478, z: -0.045093596}
+  m_Radius: 0.027756102
+  m_Height: 0.18587416
+  m_Direction: 2
+  m_Center: {x: 0.0002204664, y: 0.009191766, z: -0.042904645}
 --- !u!114 &2615163921045222107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,10 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42fd15539be116643952d34457edc957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 0.25
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  airSpeed: 10
-  slideSpeed: 50
-  reverseSpeed: -20

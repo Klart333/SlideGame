@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Benn
-    second: {fileID: 2100000, guid: befd25a53449da64daffc78e93c31ef1, type: 2}
+    second: {fileID: 2100000, guid: a5bf02a8acf7c354aac21bdb2cef5a6f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

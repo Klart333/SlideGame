@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +20,7 @@ public class UIStarManager : MonoBehaviour
     private int[] levelOneStars = new int[4] { 1000, 3000, 4000, 5000 }; // Fourth for a chest
     private int[] levelTwoStars = new int[4] { 5000, 7000, 8000, 8700 }; 
     private int[] levelThreeStars = new int[4] { 2500, 4000, 6000, 7500 }; 
+    private int[] levelFourStars = new int[4] { 2500, 4000, 6000, 7500 }; 
 
     private void Awake()
     {
@@ -29,6 +29,7 @@ public class UIStarManager : MonoBehaviour
         levelDictionary.Add(1, levelOneStars);
         levelDictionary.Add(2, levelTwoStars);
         levelDictionary.Add(3, levelThreeStars);
+        levelDictionary.Add(4, levelFourStars);
     }
 
     public void LightUpStars(int level, float score)
@@ -68,7 +69,5 @@ public class UIStarManager : MonoBehaviour
         }
 
         LevelData.SaveLevelData(level, Mathf.Clamp(length, 0, 3), length >= 4);
-        print(length >= 4);
-        print(LevelData.GetLevelData(level).hasChest);
     }
 }

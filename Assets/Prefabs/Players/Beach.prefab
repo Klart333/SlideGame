@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3138435088030171327}
   - component: {fileID: 894247497650271349}
   - component: {fileID: 6487656975085192145}
-  - component: {fileID: 9117373411150475640}
   - component: {fileID: 6696444977308195389}
+  - component: {fileID: 1253883705026250157}
   m_Layer: 0
   m_Name: Beach
   m_TagString: Untagged
@@ -94,25 +94,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 1
-  m_AngularDrag: 20
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &9117373411150475640
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687157901922555296}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.078136116, y: 0.08217641, z: 0.17191514}
-  m_Center: {x: 0.0023225993, y: -0.0015272088, z: -0.045093596}
 --- !u!114 &6696444977308195389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,10 +112,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42fd15539be116643952d34457edc957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 0.25
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  airSpeed: 10
-  slideSpeed: 50
-  reverseSpeed: -20
+--- !u!136 &1253883705026250157
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687157901922555296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.027756102
+  m_Height: 0.1910224
+  m_Direction: 2
+  m_Center: {x: 0.0002204664, y: 0.009191766, z: -0.04547876}

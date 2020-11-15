@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 public class UICreateSkinPanel : MonoBehaviour
 {
@@ -33,5 +31,8 @@ public class UICreateSkinPanel : MonoBehaviour
         gmSkin.transform.localScale = new Vector3(3000, 1500, 3000);
 
         skinText.text = skin;
+
+        FindObjectOfType<SliceShaderCutoff>().graphics.Add(gmSkin);
+        FindObjectOfType<SliceShaderCutoff>().UpdateMaterials();
     }
 }

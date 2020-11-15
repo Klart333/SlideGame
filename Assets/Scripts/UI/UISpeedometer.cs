@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 public class UISpeedometer : MonoBehaviour
 {
@@ -18,7 +16,7 @@ public class UISpeedometer : MonoBehaviour
     {
         if (playerRigidBody != null)
         {
-            text.text = ((float)Mathf.Round(playerRigidBody.velocity.z * 10f) / 10f).ToString() + "m/s"; // Gets the magintude, multiplies by ten, then rounds it to a integer, then we divide by 10. This is so we have a single decimal
+            text.text = ((float)Mathf.Round(playerRigidBody.velocity.magnitude * 10f) / 10f).ToString() + "m/s"; // Gets the magintude, multiplies by ten, then rounds it to a integer, then we divide by 10. This is so we have a single decimal
         }
     }
 }

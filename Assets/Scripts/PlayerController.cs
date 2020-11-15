@@ -3,16 +3,12 @@
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private float rayDistance = 0.1f;
-    [SerializeField]
     private LayerMask layerMask;
 
-    [SerializeField]
-    private float airSpeed = 2.5f;
-    [SerializeField]
-    private float slideSpeed = 10f;
-    [SerializeField]
-    private float reverseSpeed = -5f;
+    private float rayDistance = 0.4f;
+    private float airSpeed = 6f;
+    private float slideSpeed = 50f;
+    private float reverseSpeed = -20f;
 
     private new Rigidbody rigidbody;
 
@@ -37,11 +33,6 @@ public class PlayerController : MonoBehaviour
             }
             else if (!Grounded())
             {
-                if (transform.rotation.x < 15f)
-                {
-                    //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(15, transform.rotation.y, transform.rotation.x), 0.1f);
-                }
-
                 MovePlayer(airSpeed);
             }
         }
@@ -58,6 +49,8 @@ public class PlayerController : MonoBehaviour
 
     private bool Grounded()
     {
-        return Physics.Raycast(transform.position, Vector3.down, rayDistance, layerMask);
+        bool ray = Physics.Raycast(transform.position, Vector3.down + transform.forward, rayDistance, layerMask);
+        Debug.DrawRay(transform.position, Vector3.down + transform.forward, new Color(1, 0, 0, 1), 100);
+        return ray;
     }
 }
