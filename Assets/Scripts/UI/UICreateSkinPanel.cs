@@ -31,6 +31,7 @@ public class UICreateSkinPanel : MonoBehaviour
         gmSkin.transform.localScale = new Vector3(3000, 1500, 3000);
 
         skinText.text = skin.name;
+        skinText.color = new Color(skin.color.r, skin.color.g, skin.color.b, skin.color.a);
 
         FindObjectOfType<SliceShaderCutoff>().graphics.Add(gmSkin);
         FindObjectOfType<SliceShaderCutoff>().UpdateMaterials();

@@ -9,12 +9,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] players;
 
-    [SerializeField]
-    private float timerWeight = 1;
-
     public event Action<GameObject> OnplayerInitiated = delegate { };
 
-    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(savedVelocity, 3)) / (levelTimer * timerWeight)); } }
+    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(savedVelocity, 3)) / levelTimer); } }
 
     public bool isOnGoalStretch = false;
     public float savedVelocity = 0;

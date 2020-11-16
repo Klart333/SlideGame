@@ -64,6 +64,7 @@ MonoBehaviour:
   - {fileID: 1047728409913830051, guid: e0462d6b19aa17c49acd194c094118bb, type: 3}
   - {fileID: 9024634440167614778, guid: 8fc1cec0d5f6a5a49bbfcbfdaf59089b, type: 3}
   - {fileID: 175902310479220026, guid: 0f6745a16ba6c594d89b08ce5765a40b, type: 3}
+  - {fileID: 8754147986985643157, guid: 73ebd3b66ba42184e8e08a558305a484, type: 3}
 --- !u!1001 &8056490429101804779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: e6b9b44320f4448d9d5e0ee634259966, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7567801323339014149, guid: 5643910559a5af54a9474fc1ca00d832,
         type: 3}
       propertyPath: m_Name

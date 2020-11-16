@@ -19,8 +19,8 @@ public class SkinInitialization : MonoBehaviour
         FileStream file = File.Create(Application.persistentDataPath + "/SkinData.Main");
         SkinData skinData = new SkinData();
 
-        skinData.activeSkin = new Skin("Default", Rarity.Common);
-        skinData.unlockedSkins = new List<Skin>() { new Skin("Default", Rarity.Common) };
+        skinData.activeSkin = new Skin("Default", Rarity.Common, Color.white);
+        skinData.unlockedSkins = new List<Skin>() { new Skin("Default", Rarity.Common, Color.white) };
 
         bf.Serialize(file, skinData);
         file.Close();

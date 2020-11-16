@@ -668,7 +668,7 @@ MonoBehaviour:
   - {fileID: 1687157901922555296, guid: a3292788ae132484aba0536fea304dec, type: 3}
   - {fileID: 7240748320479163838, guid: 8ecf7a90a33e39b44b546a28981b1ee0, type: 3}
   - {fileID: 491928773848635305, guid: d46701115d2ad5047804fa5c30838205, type: 3}
-  timerWeight: 1
+  - {fileID: 8911561157980554021, guid: 13e750df37d060044aea09dc80723316, type: 3}
   isOnGoalStretch: 0
   savedVelocity: 0
 --- !u!4 &916632128
