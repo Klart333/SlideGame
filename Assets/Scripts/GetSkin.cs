@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 public static class GetSkin
 {
-    public static List<Skin> allSkins = new List<Skin>() { new Skin("Default", Rarity.Common, Color.white), new Skin("Why isn't this one the default", Rarity.Common, Color.white), new Skin("Nebula", Rarity.WellDone, new Color(1, 0, 1, 1)), new Skin("Beach", Rarity.Rare, Color.blue), new Skin("Fashionista", Rarity.Rare, Color.blue), new Skin("Caveman", Rarity.Rare, Color.blue) };
+    public static List<Skin> allSkins = new List<Skin>() { new Skin("Default", Rarity.Common, Color.white), new Skin("Metal", Rarity.Common, Color.white), new Skin("Mint", Rarity.Common, Color.white), new Skin("Why isn't this one the default", Rarity.Common, Color.white), new Skin("Nebula", Rarity.WellDone, new Color(1, 0, 1, 1)), new Skin("Beach", Rarity.Rare, Color.blue), new Skin("Fashionista", Rarity.Rare, Color.blue), new Skin("Caveman", Rarity.Rare, Color.blue) };
     public static Skin GetActiveSkin()
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))

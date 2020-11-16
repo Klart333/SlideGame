@@ -669,6 +669,8 @@ MonoBehaviour:
   - {fileID: 7240748320479163838, guid: 8ecf7a90a33e39b44b546a28981b1ee0, type: 3}
   - {fileID: 491928773848635305, guid: d46701115d2ad5047804fa5c30838205, type: 3}
   - {fileID: 8911561157980554021, guid: 13e750df37d060044aea09dc80723316, type: 3}
+  - {fileID: 7644183275743795465, guid: c3b2c24881b8b914793896a09f7cb793, type: 3}
+  - {fileID: 752419084438947961, guid: f5daf76ad5d78e7459d31e00a2a70c51, type: 3}
   isOnGoalStretch: 0
   savedVelocity: 0
 --- !u!4 &916632128

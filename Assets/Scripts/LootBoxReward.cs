@@ -6,7 +6,7 @@ public class LootBoxReward : MonoBehaviour
     private GameObject lootDisplay;
 
     private float wellDoneChance = 5f / 100f;
-    private float rareChance = 30f / 100f;
+    private float rareChance = 25f / 100f;
     private float commonChance = 55f / 100f;
 
     private void OnEnable()
@@ -18,7 +18,7 @@ public class LootBoxReward : MonoBehaviour
     {
         Loot loot = new Loot(0, new Skin());
 
-        float randNum = UnityEngine.Random.Range(0.00f, 1.00f);
+        float randNum = Random.Range(0.00f, 1.00f);
 
         if (randNum < wellDoneChance)
         {
