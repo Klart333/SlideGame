@@ -23,6 +23,7 @@ public class UIStarManager : MonoBehaviour
     private int[] levelFourStars = new int[4] { 300, 500, 700, 1000 }; 
     private int[] levelFiveStars = new int[4] { 300, 500, 700, 1000 }; 
     private int[] levelSixStars = new int[4] { 5000, 7500, 10000, 12000 }; 
+    private int[] levelSevenStars = new int[4] { 2000, 4000, 6000, 10000 }; 
 
     private void Awake()
     {
@@ -34,6 +35,7 @@ public class UIStarManager : MonoBehaviour
         levelDictionary.Add(4, levelFourStars);
         levelDictionary.Add(5, levelFiveStars);
         levelDictionary.Add(6, levelSixStars);
+        levelDictionary.Add(7, levelSevenStars);
     }
 
     public void LightUpStars(int level, float score)

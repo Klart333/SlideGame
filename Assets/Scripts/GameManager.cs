@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     public event Action<GameObject> OnplayerInitiated = delegate { };
 
-    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(savedVelocity, 3)) / levelTimer); } }
+    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(Mathf.Abs(savedVelocity), 3)) / levelTimer); } }
 
     public bool isOnGoalStretch = false;
     public float savedVelocity = 0;

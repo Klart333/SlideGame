@@ -10243,7 +10243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c6f7a0a834c51478ccb77681e6ee1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  celebrationParticles: {fileID: 0}
+  celebrationParticles: {fileID: 2006348578}
 --- !u!33 &758440118
 MeshFilter:
   m_ObjectHideFlags: 0
