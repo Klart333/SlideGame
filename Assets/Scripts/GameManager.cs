@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    public static Dictionary<int, Vector3> CustomSpawnpoints = new Dictionary<int, Vector3>();
+    public static Dictionary<int, Vector3> CustomSpawnrotations = new Dictionary<int, Vector3>();
 
     [SerializeField]
     private GameObject[] players;
@@ -27,6 +31,8 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
 
             SceneManager.activeSceneChanged += OnSceneChanged;
+            CustomSpawnpoints.Add(8, new Vector3(-18, 12, -2.5f));
+            CustomSpawnrotations.Add(8, new Vector3(0, 120, 0));
         }
         else
         {
@@ -87,7 +93,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        GameObject gmPlayer = Instantiate(prefab, new Vector3(0, 15, -15), prefab.transform.rotation);
+        GameObject gmPlayer = Instantiate(prefab, (CustomSpawnpoints.ContainsKey(lastLevelIndex)) ? CustomSpawnpoints[lastLevelIndex] : new Vector3(0, 15, -15), (CustomSpawnrotations.ContainsKey(lastLevelIndex)) ? Quaternion.Euler(CustomSpawnrotations[lastLevelIndex]) : prefab.transform.rotation);
         OnplayerInitiated(gmPlayer);
     }
 
