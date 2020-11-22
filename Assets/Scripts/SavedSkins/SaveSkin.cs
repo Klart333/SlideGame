@@ -34,7 +34,7 @@ public static class SaveSkin
             bf.Serialize(createdFile, skinData);
             createdFile.Close();
 
-            Debug.Log("Skin Saved");
+            Debug.Log("Skin Saved: " + skin.name);
         }
         else
         {
