@@ -39,6 +39,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ScoreScene.unity
     guid: e9a5e3605f25f8f42a0459ca4db095a4
   - enabled: 1
-    path: Assets/Scenes/LootBoxScene.unity
+    path: Assets/Scenes/SkinScene.unity
     guid: 0c695978d49cd834a9b1ddb162beb1ef
   m_configObjects: {}
