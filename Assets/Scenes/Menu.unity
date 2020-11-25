@@ -207,7 +207,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 305.7
+  m_fontSize: 229.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c29d7c12137bf46a63e319a727bd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkinToAdd: Nebula
+  SkinToAdd: Beach
 --- !u!4 &256907826
 Transform:
   m_ObjectHideFlags: 0
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 403.95
+  m_fontSize: 302.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 323.95
+  m_fontSize: 242.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

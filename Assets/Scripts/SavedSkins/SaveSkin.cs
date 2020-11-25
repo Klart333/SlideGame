@@ -20,7 +20,6 @@ public static class SaveSkin
                 if (i == skinData.unlockedSkins.Count) // If we made it through all the way
                 {
                     skinData.unlockedSkins.Add(skin);
-                    SortSkins();
                     break;
                 }
 
@@ -34,6 +33,7 @@ public static class SaveSkin
             bf.Serialize(createdFile, skinData);
             createdFile.Close();
 
+            SortSkins();
             Debug.Log("Skin Saved: " + skin.name);
         }
         else
