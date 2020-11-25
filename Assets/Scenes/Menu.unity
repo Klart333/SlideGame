@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c29d7c12137bf46a63e319a727bd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkinToAdd: Beach
+  SkinToAdd: fer
 --- !u!4 &256907826
 Transform:
   m_ObjectHideFlags: 0

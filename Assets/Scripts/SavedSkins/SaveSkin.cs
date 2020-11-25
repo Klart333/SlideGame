@@ -19,8 +19,16 @@ public static class SaveSkin
             {
                 if (i == skinData.unlockedSkins.Count) // If we made it through all the way
                 {
-                    skinData.unlockedSkins.Add(skin);
-                    break;
+                    if (!GetSkin.GetAllUnlockedSkins().Contains(skin))
+                    {
+                        skinData.unlockedSkins.Add(skin);
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Skin Already Owned");
+                        return;
+                    }
                 }
 
                 if (skinData.unlockedSkins[i].name == skin.name) // If we already own the skin we break and don't add it

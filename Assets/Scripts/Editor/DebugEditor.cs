@@ -33,6 +33,14 @@ public class DebugEditor : Editor
             }
         }
 
+        if (GUILayout.Button("Get All Skins"))
+        {
+            foreach (Skin skin in GetSkin.allSkins)
+            {
+                SaveSkin.SaveASkin(skin);
+            }
+        }
+
         if (GUILayout.Button("Sort Skins"))
         {
             SaveSkin.SortSkins();

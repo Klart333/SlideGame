@@ -6,7 +6,6 @@ public class SkinInitialization : MonoBehaviour
 {
     private void Start()
     {
-
         if (!File.Exists(Application.persistentDataPath + "/SkinData.Main"))
         {
             Initialize();
