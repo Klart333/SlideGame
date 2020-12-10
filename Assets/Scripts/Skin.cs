@@ -7,11 +7,19 @@ public struct Skin
     public string name;
     public Rarity rarity;
     public SerializableColor color;
-    public Skin(string name, Rarity rarity, Color color)
+
+    public float slideSpeed;
+    public float airSpeed;
+    public float reverseSpeed;
+
+    public Skin(string name, Rarity rarity, Color color, float slideSpeed, float airSpeed, float reverseSpeed)
     {
         this.name = name;
         this.rarity = rarity;
         this.color = new SerializableColor(color);
+        this.slideSpeed = slideSpeed;
+        this.airSpeed = airSpeed;
+        this.reverseSpeed = reverseSpeed;
     }
 }
 

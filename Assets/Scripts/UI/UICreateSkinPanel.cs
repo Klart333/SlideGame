@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class UICreateSkinPanel : MonoBehaviour
 {
@@ -32,6 +33,11 @@ public class UICreateSkinPanel : MonoBehaviour
 
         skinText.text = skin.name;
         skinText.color = new Color(skin.color.r, skin.color.g, skin.color.b, skin.color.a);
+
+        if (skin.name == GetSkin.GetActiveSkin().name)
+        {
+            GetComponentInParent<UIDisplaySelectedSkin>().SetSelected(GetComponent<Image>());
+        }
 
         FindObjectOfType<SliceShaderCutoff>().graphics.Add(gmSkin);
         FindObjectOfType<SliceShaderCutoff>().UpdateMaterials();

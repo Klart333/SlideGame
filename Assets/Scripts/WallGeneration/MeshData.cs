@@ -8,12 +8,6 @@ public class MeshData
 
     int triangleIndex;
 
-    public MeshData(int meshWidth, int meshHeight)
-    {
-        vertices = new Vector3[meshWidth * meshHeight];
-        uvs = new Vector2[meshWidth * meshHeight];
-        triangleVertices = new int[(meshWidth - 1) * (meshHeight - 1) * 6];
-    }
     public MeshData(Vector3[] vertices, Vector2[] uvs, int[] triangleVertices)
     {
         this.vertices = vertices;

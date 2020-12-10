@@ -4,16 +4,16 @@ using UnityEngine;
 public class UIMoveCamera : MonoBehaviour
 {
     [SerializeField]
-    private Vector3 cameraPosition;
+    private Vector3 targetPosition;
 
     [SerializeField]
-    private Vector3 cameraRotation;
+    private Vector3 targetRotation;
+
+    [SerializeField]
+    private float speed = 1;
 
     private new GameObject camera;
     private CameraManager cameraManager;
-
-    private float time = 1.5f;
-    private int iterations = 100;
 
     private void OnEnable()
     {
@@ -32,14 +32,21 @@ public class UIMoveCamera : MonoBehaviour
 
     private IEnumerator MoveCamera()
     {
-        Vector3 positionDelta = cameraPosition - camera.transform.position;
+        Vector3 originalPosition = camera.transform.position;
 
-        for (int i = 0; i < iterations; i++)
+        Quaternion originalRotation = camera.transform.rotation;
+
+        float t = 0;
+
+        while (t <= 1)
         {
-            camera.transform.position += positionDelta / iterations;
-            camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, Quaternion.Euler(cameraRotation), time * 2.5f / iterations); // Jag fattar inte hur tiden funkar, skulle uppskatta om du kunde förklara :P
+            camera.transform.position = Vector3.Lerp(originalPosition, targetPosition, t);
 
-            yield return new WaitForSeconds(time / iterations);
+            camera.transform.rotation = Quaternion.Lerp(originalRotation, Quaternion.Euler(targetRotation), t);
+
+            t += Time.deltaTime * speed;
+
+            yield return null;
         }
 
         cameraManager.onTheMove = false;
