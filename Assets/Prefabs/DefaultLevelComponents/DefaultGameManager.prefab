@@ -53,5 +53,7 @@ MonoBehaviour:
   - {fileID: 7644183275743795465, guid: c3b2c24881b8b914793896a09f7cb793, type: 3}
   - {fileID: 752419084438947961, guid: f5daf76ad5d78e7459d31e00a2a70c51, type: 3}
   - {fileID: 9023765351917084885, guid: abee2a6b418920d48abe3ab7cf5d0f7b, type: 3}
+  - {fileID: 3917754798512361469, guid: bd6de48b10ca6ce4fab41fb890af032a, type: 3}
   isOnGoalStretch: 0
   savedVelocity: 0
+  lastLevelIndex: 0

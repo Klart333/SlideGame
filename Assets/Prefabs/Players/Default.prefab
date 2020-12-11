@@ -109,7 +109,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2686381210218319903}
-  m_Material: {fileID: 13400000, guid: d10f0c0cdb28b824bb0d12a1c6dd85e8, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.027756102
@@ -132,6 +132,3 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   rayDistance: 0.5
-  airSpeed: 6
-  slideSpeed: 50
-  reverseSpeed: -15
