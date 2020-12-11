@@ -10,6 +10,7 @@ public static class GetSkin
 
     public static Skin Nebula = new Skin("Nebula", Rarity.WellDone, new Color(1, 0, 1, 1), 60, 20, -30);
     public static Skin Reverser = new Skin("Reverser", Rarity.WellDone, new Color(1, 0, 1, 1), 20, 5, -75);
+    public static Skin CouchPotato = new Skin("Couch Potato", Rarity.WellDone, new Color(1, 0, 1, 1), 75, 0, -0);
     public static Skin Caveman = new Skin("Caveman", Rarity.Rare, Color.blue, 55, 1, -15);
     public static Skin Fashionista = new Skin("Fashionista", Rarity.Rare, Color.blue, 45, 12, -20);
     public static Skin Beach = new Skin("Beach", Rarity.Rare, Color.blue, 55, 3, -10);
@@ -27,7 +28,9 @@ public static class GetSkin
         WhyIsntThisOneTheDefault,
         Beach,
         Fashionista,
-        Caveman };
+        Caveman,
+        CouchPotato 
+    };
     public static Skin GetActiveSkin()
     {
         if (File.Exists(Application.persistentDataPath + "/SkinData.Main"))

@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
 
     public bool isOnGoalStretch = false;
     public float savedVelocity = 0;
+    public int lastLevelIndex;
 
     private float levelTimer = 0;
-    private int lastLevelIndex;
 
     private void Awake()
     {

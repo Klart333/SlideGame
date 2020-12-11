@@ -288,6 +288,7 @@ MonoBehaviour:
   - {fileID: 7775242656175853204, guid: b33a3f56c98977440aa787b6944e9556, type: 3}
   - {fileID: 4649113596275257452, guid: 770d5f7f23316114198412176f225003, type: 3}
   - {fileID: 7238208116163742358, guid: 69788a37e2c87d949bb28f274b35d31f, type: 3}
+  - {fileID: 2394385368296993526, guid: c45cf559ba611aa4c9cbad688d4a5a3d, type: 3}
 --- !u!114 &-7676200213825853553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +309,9 @@ MonoBehaviour:
       g: 0
       b: 0
       a: 0
+    slideSpeed: 0
+    airSpeed: 0
+    reverseSpeed: 0
 --- !u!114 &2832708548692234008
 MonoBehaviour:
   m_ObjectHideFlags: 0

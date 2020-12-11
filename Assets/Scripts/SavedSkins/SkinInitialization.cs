@@ -10,10 +10,9 @@ public class SkinInitialization : MonoBehaviour
         {
             Initialize();
         }
-
     }
 
-    private void Initialize()
+    public void Initialize()
     {
         BinaryFormatter bf = new BinaryFormatter();
 
