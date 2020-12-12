@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -6,21 +7,33 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public static Dictionary<int, Vector3> CustomSpawnpoints = new Dictionary<int, Vector3>()
+    {
+        { 8, new Vector3(-18, 12, -2.5f) },
+        { 10, new Vector3(3.6f, -10.7f, -44f) },
+        { 11, new Vector3(-22f, -10.7f, -0.3f) },
+        { 12, new Vector3(3f, 15f, -15f) },
+        { 13, new Vector3(0, 13f, -2.5f) }
+    };
+
+    public static Dictionary<int, Vector3> CustomSpawnrotations = new Dictionary<int, Vector3>() 
+    {
+        { 8, new Vector3(0, 120, 0) },
+        { 11, new Vector3(0, 90, 0) }
+    };
+
     [SerializeField]
     private GameObject[] players;
 
-    [SerializeField]
-    private float timerWeight = 1;
-
     public event Action<GameObject> OnplayerInitiated = delegate { };
 
-    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(savedVelocity, 3)) / (levelTimer * timerWeight)); } }
+    public int Score { get { return Mathf.RoundToInt((Mathf.Pow(Mathf.Abs(savedVelocity), 3)) / levelTimer); } }
 
     public bool isOnGoalStretch = false;
     public float savedVelocity = 0;
+    public int lastLevelIndex;
 
     private float levelTimer = 0;
-    private int lastLevelIndex;
 
     private void Awake()
     {
@@ -78,19 +91,19 @@ public class GameManager : MonoBehaviour
 
     private void SpawnPlayer()
     {
-        string activeSkin = GetSkin.GetActiveSkin();
+        Skin activeSkin = GetSkin.GetActiveSkin();
         GameObject prefab = null;
 
         foreach (GameObject player in players)
         {
-            if (player.name == activeSkin)
+            if (player.name == activeSkin.name)
             {
                 prefab = player;
                 break;
             }
         }
 
-        GameObject gmPlayer = Instantiate(prefab, new Vector3(0, 15, -15), prefab.transform.rotation);
+        GameObject gmPlayer = Instantiate(prefab, (CustomSpawnpoints.ContainsKey(lastLevelIndex)) ? CustomSpawnpoints[lastLevelIndex] : new Vector3(0, 15, -15), (CustomSpawnrotations.ContainsKey(lastLevelIndex)) ? Quaternion.Euler(CustomSpawnrotations[lastLevelIndex]) : prefab.transform.rotation);
         OnplayerInitiated(gmPlayer);
     }
 

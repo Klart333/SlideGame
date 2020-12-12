@@ -115,6 +115,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  rayDistance: 0.5
 --- !u!136 &1253883705026250157
 CapsuleCollider:
   m_ObjectHideFlags: 0

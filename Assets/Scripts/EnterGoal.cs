@@ -11,7 +11,7 @@ public class EnterGoal : MonoBehaviour
     {
         if (other.GetComponent<PlayerController>())
         {
-            GameManager.Instance.savedVelocity = other.GetComponent<Rigidbody>().velocity.z;
+            GameManager.Instance.savedVelocity = other.GetComponent<Rigidbody>().velocity.magnitude;
             celebrationParticles.SetActive(true);
 
             StartCoroutine("WaitBeforeChangeScene");

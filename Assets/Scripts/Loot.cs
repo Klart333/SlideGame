@@ -1,9 +1,9 @@
 ﻿public class Loot
 {
     public int money;
-    public string skin;
+    public Skin skin;
 
-    public Loot(int money, string skin)
+    public Loot(int money, Skin skin)
     {
         this.money = money;
         this.skin = skin;

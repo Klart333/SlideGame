@@ -44,8 +44,6 @@ public static class LootBoxAmount
             FileStream createdFile = File.Create(Application.persistentDataPath + "/LootBox.Amount");
             bf.Serialize(createdFile, amount);
             createdFile.Close();
-
-            Debug.Log("Lootbox amount saved");
         }
         else
         {

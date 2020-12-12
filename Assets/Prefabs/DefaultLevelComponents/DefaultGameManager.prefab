@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5718287038938359766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5718287038938359720}
+  - component: {fileID: 5718287038938359767}
+  m_Layer: 0
+  m_Name: DefaultGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5718287038938359720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5718287038938359766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5718287038938359767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5718287038938359766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b8ec4edc083f444b1c2a64c0b2ca37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players:
+  - {fileID: 2686381210218319903, guid: 2b47dac4d5f51ae45a74995821c6afd0, type: 3}
+  - {fileID: 1092147809297710842, guid: bded41b2d359dde4fba31ff8e11fd6dc, type: 3}
+  - {fileID: 1687157901922555296, guid: a3292788ae132484aba0536fea304dec, type: 3}
+  - {fileID: 7240748320479163838, guid: 8ecf7a90a33e39b44b546a28981b1ee0, type: 3}
+  - {fileID: 491928773848635305, guid: d46701115d2ad5047804fa5c30838205, type: 3}
+  - {fileID: 8911561157980554021, guid: 13e750df37d060044aea09dc80723316, type: 3}
+  - {fileID: 7644183275743795465, guid: c3b2c24881b8b914793896a09f7cb793, type: 3}
+  - {fileID: 752419084438947961, guid: f5daf76ad5d78e7459d31e00a2a70c51, type: 3}
+  - {fileID: 9023765351917084885, guid: abee2a6b418920d48abe3ab7cf5d0f7b, type: 3}
+  - {fileID: 3917754798512361469, guid: bd6de48b10ca6ce4fab41fb890af032a, type: 3}
+  isOnGoalStretch: 0
+  savedVelocity: 0
+  lastLevelIndex: 0

@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 public class UISetActiveSkin : MonoBehaviour
 {
-    public string skin;
+    public Skin skin;
 
     public void SetActiveSkin()
     {
         SaveSkin.SetActiveSkin(skin);
+        GetComponentInParent<UIDisplaySelectedSkin>().SetSelected(GetComponent<Image>());
     }
 }

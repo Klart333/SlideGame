@@ -4,7 +4,7 @@ using Cinemachine;
 public class CinematicMode : MonoBehaviour
 {
     [SerializeField]
-    private float timeToSwitch = 0.5f;
+    private float speed = 1.5f;
 
     private CinemachineVirtualCamera vcam;
     private CinemachineTransposer vcamTransposer;
@@ -17,15 +17,16 @@ public class CinematicMode : MonoBehaviour
 
     public IEnumerator CinematicCamera()
     {
-        int iterations = 300;
-        float xToMove = 20;
-        float yToMove = 0;
-        float zToMove = 0 - vcamTransposer.m_FollowOffset.z;
+        float t = 0;
+        Vector3 originalPosition = vcamTransposer.m_FollowOffset;
+        Vector3 targetPosition = originalPosition + new Vector3(30, 0, -originalPosition.z);
 
-        for (int i = 0; i < iterations; i++)
+        while (t <= 1)
         {
-            vcamTransposer.m_FollowOffset += new Vector3(xToMove / (float)iterations, yToMove / (float)iterations, zToMove / (float)iterations);
-            yield return new WaitForSeconds(timeToSwitch / (float)iterations);
+            vcamTransposer.m_FollowOffset = Vector3.Lerp(originalPosition, targetPosition, t);
+            t += Time.deltaTime * speed;
+
+            yield return null;
         }
     }
 }

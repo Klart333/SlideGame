@@ -15,21 +15,26 @@ public class UIStarManager : MonoBehaviour
 
     private Image[] starImages;
 
-    private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>();
-
-    private int[] levelOneStars = new int[4] { 1000, 3000, 4000, 5000 }; // Fourth for a chest
-    private int[] levelTwoStars = new int[4] { 5000, 7000, 8000, 8700 }; 
-    private int[] levelThreeStars = new int[4] { 2500, 4000, 6000, 7500 }; 
-    private int[] levelFourStars = new int[4] { 300, 500, 700, 1000 }; 
+    private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>() // Fourth for a chest
+    {
+        {1, new int[4] { 1000, 3000, 4000, 5000 } },
+        {2, new int[4] { 5000, 7000, 8000, 10000 } },
+        {3, new int[4] { 5000, 10000, 15000, 22000 } },
+        {4, new int[4] { 300, 500, 700, 1000 } },
+        {5, new int[4] { 300, 500, 700, 1000 } },
+        {6, new int[4] { 5000, 7500, 10000, 12000 } },
+        {7, new int[4] { 2000, 4000, 6000, 10000 } },
+        {8, new int[4] { 2000, 4000, 6000, 10000 } },
+        {9, new int[4] { 1000, 2000, 2500, 3500 } },
+        {10, new int[4] { 2500, 5000, 8000, 10000 } },
+        {11, new int[4] { 100, 400, 800, 2000 } },
+        {12, new int[4] { 5000, 7000, 8000, 10000 } },
+        {13, new int[4] { 2000, 5000, 8000, 12000 } }
+    };
 
     private void Awake()
     {
         starImages = GetComponentsInChildren<Image>();
-
-        levelDictionary.Add(1, levelOneStars);
-        levelDictionary.Add(2, levelTwoStars);
-        levelDictionary.Add(3, levelThreeStars);
-        levelDictionary.Add(4, levelFourStars);
     }
 
     public void LightUpStars(int level, float score)

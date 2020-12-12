@@ -5,16 +5,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private LayerMask layerMask;
 
+    [SerializeField]
     private float rayDistance = 0.5f;
-    private float airSpeed = 6f;
-    private float slideSpeed = 50f;
-    private float reverseSpeed = -20f;
+
+    private float slideSpeed;
+    private float airSpeed;
+    private float reverseSpeed;
 
     private new Rigidbody rigidbody;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
+
+        slideSpeed = GetSkin.GetActiveSkin().slideSpeed;
+        airSpeed = GetSkin.GetActiveSkin().airSpeed;
+        reverseSpeed = GetSkin.GetActiveSkin().reverseSpeed;
     }
 
     private void Update()
@@ -49,8 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private bool Grounded()
     {
-        bool ray = Physics.Raycast(transform.position, Vector3.down + transform.forward, rayDistance, layerMask);
-        Debug.DrawRay(transform.position, Vector3.down + transform.forward, new Color(1, 0, 0, 1), 100);
-        return ray;
+        bool rayHit = Physics.Raycast(transform.position, Vector3.down + transform.forward, rayDistance, layerMask);
+        return rayHit;
     }
 }
