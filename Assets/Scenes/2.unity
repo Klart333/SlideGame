@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 198.15
+  m_fontSize: 148.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2530,7 +2530,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 279.6
+  m_fontSize: 209.7
   m_fontSizeBase: 200.03
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6921,7 +6921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4278bfd4983541c498a8f07ace7d92bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSwitch: 0.5
+  speed: 1.5
 --- !u!4 &1543204673
 Transform:
   m_ObjectHideFlags: 0
@@ -10100,7 +10100,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -552372434691144299, guid: 0a9498636076df74b9b9acee02815f84, type: 3}
+  - {fileID: 2100000, guid: ac2940a1455dd8d44a7029cd76c978d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

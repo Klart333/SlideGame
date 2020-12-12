@@ -7,8 +7,20 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public static Dictionary<int, Vector3> CustomSpawnpoints = new Dictionary<int, Vector3>();
-    public static Dictionary<int, Vector3> CustomSpawnrotations = new Dictionary<int, Vector3>();
+    public static Dictionary<int, Vector3> CustomSpawnpoints = new Dictionary<int, Vector3>()
+    {
+        { 8, new Vector3(-18, 12, -2.5f) },
+        { 10, new Vector3(3.6f, -10.7f, -44f) },
+        { 11, new Vector3(-22f, -10.7f, -0.3f) },
+        { 12, new Vector3(3f, 15f, -15f) },
+        { 13, new Vector3(0, 13f, -2.5f) }
+    };
+
+    public static Dictionary<int, Vector3> CustomSpawnrotations = new Dictionary<int, Vector3>() 
+    {
+        { 8, new Vector3(0, 120, 0) },
+        { 11, new Vector3(0, 90, 0) }
+    };
 
     [SerializeField]
     private GameObject[] players;
@@ -31,8 +43,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
 
             SceneManager.activeSceneChanged += OnSceneChanged;
-            CustomSpawnpoints.Add(8, new Vector3(-18, 12, -2.5f));
-            CustomSpawnrotations.Add(8, new Vector3(0, 120, 0));
         }
         else
         {

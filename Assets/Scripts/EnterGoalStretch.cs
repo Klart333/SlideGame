@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnterGoalStretch : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other) // Här kan du implementera polymorphism
+    private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerController>())
         {

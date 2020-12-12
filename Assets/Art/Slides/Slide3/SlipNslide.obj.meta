@@ -3,7 +3,12 @@ guid: 0a9498636076df74b9b9acee02815f84
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SlipNslide_mat
+    second: {fileID: 2100000, guid: ac2940a1455dd8d44a7029cd76c978d6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

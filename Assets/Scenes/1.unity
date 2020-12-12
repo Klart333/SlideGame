@@ -774,6 +774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideLevel1
       objectReference: {fileID: 0}
+    - target: {fileID: 6861138913546057506, guid: 7714580820a27d14f93c7b93a4a46341,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ac2940a1455dd8d44a7029cd76c978d6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7714580820a27d14f93c7b93a4a46341, type: 3}
 --- !u!1 &1294687018
