@@ -48,6 +48,8 @@ public class UIMoveCamera : MonoBehaviour
 
             yield return null;
         }
+        camera.transform.position = Vector3.Lerp(originalPosition, targetPosition, 1);
+        camera.transform.rotation = Quaternion.Lerp(originalRotation, Quaternion.Euler(targetRotation), 1);
 
         cameraManager.onTheMove = false;
     }

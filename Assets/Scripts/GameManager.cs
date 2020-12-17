@@ -13,13 +13,22 @@ public class GameManager : MonoBehaviour
         { 10, new Vector3(3.6f, -10.7f, -44f) },
         { 11, new Vector3(-22f, -10.7f, -0.3f) },
         { 12, new Vector3(3f, 15f, -15f) },
-        { 13, new Vector3(0, 13f, -2.5f) }
+        { 13, new Vector3(0, 13f, -2.5f) },
+        { 14, new Vector3(7.5f, 7.3f, -25f) },
+        { 15, new Vector3(15.5f, 37f, -60f) },
+        { 16, new Vector3(-5.26f, -9.51f, 7.34f) },
+        { 17, new Vector3(40.11f, -20f, -33.18f) },
+        { 18, new Vector3(-0.27075f, -6.494f, -17.71f) }
     };
 
     public static Dictionary<int, Vector3> CustomSpawnrotations = new Dictionary<int, Vector3>() 
     {
         { 8, new Vector3(0, 120, 0) },
-        { 11, new Vector3(0, 90, 0) }
+        { 11, new Vector3(0, 90, 0) },
+        { 15, new Vector3(30, 0, 0) },
+        { 16, new Vector3(0, 155, 0) },
+        { 17, new Vector3(0, 220, 0) },
+        { 18, new Vector3(-4.18f, 0, 0) }
     };
 
     [SerializeField]
@@ -59,13 +68,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnSceneChanged(Scene currentScene, Scene sceneToBe)
+    private void OnSceneChanged(Scene NullFuckingScene, Scene sceneToBe)
     {
+        FindObjectOfType<FadePanel>().StartCoroutine(FindObjectOfType<FadePanel>().FadeIn());
+
         if (sceneToBe.name == "ScoreScene")
         {
             SetPlayButtons();
             LightStars();
             ShowScore();
+            UnlockedLevels.SetHighestUnlockedLevel(lastLevelIndex + 1);
             return;
         }
 

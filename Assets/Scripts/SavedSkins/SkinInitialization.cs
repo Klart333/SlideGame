@@ -25,6 +25,6 @@ public class SkinInitialization : MonoBehaviour
         bf.Serialize(file, skinData);
         file.Close();
 
-        print("Initialization Complete");
+        print("Skin Initialization Complete");
     }
 }

@@ -19,6 +19,9 @@ public class UISetLevelDisplay : MonoBehaviour
     [SerializeField]
     private Sprite lootBoxFilled;
 
+    [SerializeField]
+    private GameObject lockPanel;
+
     private int levelIndex;
 
     private void Awake()
@@ -35,10 +38,21 @@ public class UISetLevelDisplay : MonoBehaviour
         {
             LightUpStar(i);
         }
+
+        IsLocked();
     }
 
     private void LightUpStar(int index)
     {
         starPanel.transform.GetChild(index).GetComponent<Image>().sprite = starFilled;
+    }
+
+    private void IsLocked()
+    {
+        if (levelIndex > UnlockedLevels.GetHighestUnlockedLevel())
+        {
+            GetComponent<Button>().interactable = false;
+            lockPanel.SetActive(true);
+        }
     }
 }
