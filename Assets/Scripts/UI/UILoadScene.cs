@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections;
+
+[RequireComponent(typeof(AudioSource))]
 public class UILoadScene : MonoBehaviour
 {
     [Header("Pick One")]
@@ -11,8 +11,19 @@ public class UILoadScene : MonoBehaviour
     [SerializeField]
     private string sceneToLoadName = "";
 
+    [SerializeField]
+    private SimpleAudioEvent simpleAudioEvent;
+
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void OnButtonClicked()
     {
+        simpleAudioEvent.Play(audioSource);
         FindObjectOfType<FadePanel>().StartCoroutine(FindObjectOfType<FadePanel>().FadeOut(this));
     }
 

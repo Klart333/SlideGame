@@ -45,6 +45,7 @@ public class LootBoxReward : MonoBehaviour
         // MoneyClass.Money += loot.money;
 
         GameObject gmLootDisplay = Instantiate(lootDisplay, transform.position, Quaternion.identity);
+        gmLootDisplay.GetComponent<AcceptLoot>().lootbox = this.transform.parent.gameObject;
         gmLootDisplay.GetComponent<SetLootDisplay>().SetDisplay(loot);
 
         if (loot.skin.color != null)
@@ -53,8 +54,6 @@ public class LootBoxReward : MonoBehaviour
         }
 
         GetComponent<UIMoveCamera>().OnButton();
-
-        Destroy(gameObject.transform.parent.gameObject, 3);
     }
 
     private Skin GetRandomSkin(Rarity rarity)

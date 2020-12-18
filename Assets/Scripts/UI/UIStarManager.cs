@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class UIStarManager : MonoBehaviour
 {
     [SerializeField]
@@ -13,11 +15,15 @@ public class UIStarManager : MonoBehaviour
     [SerializeField]
     private GameObject alreadyGotText;
 
+    [SerializeField]
+    private SimpleAudioEvent simpleAudioEvent;
+
     private Image[] starImages;
+    private AudioSource audioSource;
 
     private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>() // Fourth for a chest
     {
-        {1, new int[4] { 1000, 3000, 4000, 5000 } },
+        {1, new int[4] { 1000, 2000, 3000, 5000 } },
         {2, new int[4] { 5000, 7000, 8000, 10000 } },
         {3, new int[4] { 5000, 10000, 15000, 22000 } },
         {4, new int[4] { 300, 500, 700, 1000 } },
@@ -39,10 +45,12 @@ public class UIStarManager : MonoBehaviour
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+        
         starImages = GetComponentsInChildren<Image>();
     }
 
-    public void LightUpStars(int level, float score)
+    public IEnumerator LightUpStars(int level, float score)
     {
         int length = 0;
 
@@ -57,27 +65,59 @@ public class UIStarManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i <= length; i++)
+        for (int i = 0; i < length; i++)
         {
-            if (i == 4)
+            if (i == 3)
             {
                 Instantiate(rewardLootBox, new Vector3(0, 1, 0), Quaternion.identity);
 
                 if (LevelData.GetLevelData(level).hasChest == false)
                 {
                     LootBoxAmount.SetLootBoxAmount(1);
+                    // We Only play a sound if the box is real
+                    yield return new WaitForSeconds(1);
+                    //Play bing-bing-BONG
                 }
                 else
                 {
                     alreadyGotText.SetActive(true);
                 }
 
+
                 break;
             }
 
+            simpleAudioEvent.Play(audioSource);
             starImages[i].sprite = starFillImage;
+            yield return StartCoroutine(AnimateStar(starImages[i]));
         }
 
         LevelData.SaveLevelData(level, Mathf.Clamp(length, 0, 3), length >= 4);
+    }
+
+    private IEnumerator AnimateStar(Image image)
+    {
+        float t = 0;
+        float speed = 2;
+
+        Vector3 ogScale = image.transform.localScale;
+        Vector3 bigScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime * speed;
+            image.transform.localScale = Vector3.Lerp(ogScale, bigScale, t);
+            yield return null;
+        }
+
+        t = 0;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime * speed;
+            image.transform.localScale = Vector3.Lerp(bigScale, ogScale, t);
+            yield return null;
+        }
+        image.transform.localScale = Vector3.Lerp(bigScale, ogScale, 1);
     }
 }

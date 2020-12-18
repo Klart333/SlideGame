@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
 
     private void LightStars()
     {
-        FindObjectOfType<UIStarManager>().LightUpStars(lastLevelIndex, Score);
+        FindObjectOfType<UIStarManager>().StartCoroutine(FindObjectOfType<UIStarManager>().LightUpStars(lastLevelIndex, Score));
     }
 
     private void ShowScore()
