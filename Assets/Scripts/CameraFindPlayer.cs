@@ -7,7 +7,7 @@ public class CameraFindPlayer : MonoBehaviour
     private bool isCustomOffset = false;
 
     [SerializeField]
-    private Vector3 customOffset;
+    private Vector3 customOffset = new Vector3(0, 4.5f, -5);
 
     private CinemachineVirtualCamera vcam;
     private CinemachineTransposer vcamTransposer;
