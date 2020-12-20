@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StarDing
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 9762e7706f9ddce458a5f8a387e88783, type: 3}
+  - {fileID: 8300000, guid: d506b0d971348034a93491641ba046a0, type: 3}
   volume:
     minValue: 1
     maxValue: 1

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df36a1cfc4f34af438a0fbbb9edfa9c0, type: 3}
-  m_Name: SwitchScene
+  m_Name: ButtonPress
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: feedae07c12be0544ac2da7823b51069, type: 3}

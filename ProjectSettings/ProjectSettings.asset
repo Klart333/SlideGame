@@ -658,10 +658,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: c8fbd569-9cf5-4129-8a6c-f4a6245b8368
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Slide
+  organizationId: klart3333
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

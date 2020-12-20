@@ -72,14 +72,17 @@ public class Highscores : MonoBehaviour
             for (int i = 0; i < entries.Length; i++)
             {
                 string[] entryInfo = entries[i].Split(new char[] { '|' });
-                if (entryInfo.Length == 0)
+                if (entryInfo.Length < 3)
                 {
                     return; // Something went wrong and we just abort
                 }
 
                 string username = entryInfo[0]; // Still here for clarity that the first thing is the username, but we do not use it
-                int score = int.Parse(entryInfo[1]);
-                int levelIndex = int.Parse(entryInfo[2]);
+
+                int score = 0;
+                int.TryParse(entryInfo[1], out score);
+                int levelIndex = 0;
+                int.TryParse(entryInfo[2], out levelIndex);
 
                 highscoreList[i] = new Highscore(score, levelIndex);
             }

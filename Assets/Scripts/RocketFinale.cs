@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Cinemachine;
+[RequireComponent(typeof(AudioSource))]
 public class RocketFinale : MonoBehaviour
 {
     [SerializeField]
@@ -13,6 +13,9 @@ public class RocketFinale : MonoBehaviour
 
     [SerializeField]
     private GameObject rocket;
+
+    [SerializeField]
+    private SimpleAudioEvent rocketSFX;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,6 +36,7 @@ public class RocketFinale : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         rocket.GetComponent<SimpleMovement>().StartCoroutine(rocket.GetComponent<SimpleMovement>().Move());
+        rocketSFX.Play(GetComponent<AudioSource>());
 
         for (int i = 0; i < particleSystems.Length; i++)
         {

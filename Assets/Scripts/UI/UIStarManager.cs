@@ -16,7 +16,10 @@ public class UIStarManager : MonoBehaviour
     private GameObject alreadyGotText;
 
     [SerializeField]
-    private SimpleAudioEvent simpleAudioEvent;
+    private SimpleAudioEvent starSFX;
+
+    [SerializeField]
+    private SimpleAudioEvent chestSFX;
 
     private Image[] starImages;
     private AudioSource audioSource;
@@ -33,7 +36,7 @@ public class UIStarManager : MonoBehaviour
         {8, new int[4] { 2000, 4000, 6000, 10000 } },
         {9, new int[4] { 1000, 2000, 2500, 3500 } },
         {10, new int[4] { 2500, 5000, 8000, 10000 } },
-        {11, new int[4] { 100, 400, 800, 2000 } },
+        {11, new int[4] { 100, 400, 800, 1800 } },
         {12, new int[4] { 5000, 7000, 8000, 10000 } },
         {13, new int[4] { 2000, 5000, 8000, 12000 } },
         {14, new int[4] { 1000, 2000, 5000, 12000 } },
@@ -52,6 +55,7 @@ public class UIStarManager : MonoBehaviour
 
     public IEnumerator LightUpStars(int level, float score)
     {
+        yield return new WaitForSeconds(1.5f);
         int length = 0;
 
         int[] starArray = new int[4];
@@ -74,9 +78,10 @@ public class UIStarManager : MonoBehaviour
                 if (LevelData.GetLevelData(level).hasChest == false)
                 {
                     LootBoxAmount.SetLootBoxAmount(1);
+
                     // We Only play a sound if the box is real
                     yield return new WaitForSeconds(1);
-                    //Play bing-bing-BONG
+                    chestSFX.Play(audioSource);
                 }
                 else
                 {
@@ -87,7 +92,7 @@ public class UIStarManager : MonoBehaviour
                 break;
             }
 
-            simpleAudioEvent.Play(audioSource);
+            starSFX.Play(audioSource);
             starImages[i].sprite = starFillImage;
             yield return StartCoroutine(AnimateStar(starImages[i]));
         }
@@ -98,7 +103,7 @@ public class UIStarManager : MonoBehaviour
     private IEnumerator AnimateStar(Image image)
     {
         float t = 0;
-        float speed = 2;
+        float speed = 1.5f;
 
         Vector3 ogScale = image.transform.localScale;
         Vector3 bigScale = new Vector3(1.5f, 1.5f, 1.5f);
