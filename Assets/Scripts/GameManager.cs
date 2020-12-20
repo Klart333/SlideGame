@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public static Dictionary<int, Vector3> CustomSpawnpoints = new Dictionary<int, Vector3>()
     {
+        { 5, new Vector3(465, 84.78f, 59.57f) },
         { 8, new Vector3(-18, 12, -2.5f) },
         { 10, new Vector3(3.6f, -10.7f, -44f) },
         { 11, new Vector3(-22f, -10.7f, -0.3f) },

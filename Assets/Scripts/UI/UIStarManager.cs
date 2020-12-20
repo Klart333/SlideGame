@@ -29,8 +29,8 @@ public class UIStarManager : MonoBehaviour
         {1, new int[4] { 1000, 2000, 3000, 5000 } },
         {2, new int[4] { 5000, 7000, 8000, 10000 } },
         {3, new int[4] { 5000, 10000, 15000, 22000 } },
-        {4, new int[4] { 300, 500, 700, 1000 } },
-        {5, new int[4] { 300, 500, 700, 1000 } },
+        {4, new int[4] { 250, 500, 700, 1000 } },
+        {5, new int[4] { 3000, 5000, 7000, 14000 } },
         {6, new int[4] { 5000, 7500, 10000, 12000 } },
         {7, new int[4] { 2000, 4000, 6000, 10000 } },
         {8, new int[4] { 2000, 4000, 6000, 10000 } },
@@ -80,7 +80,6 @@ public class UIStarManager : MonoBehaviour
                     LootBoxAmount.SetLootBoxAmount(1);
 
                     // We Only play a sound if the box is real
-                    yield return new WaitForSeconds(1);
                     chestSFX.Play(audioSource);
                 }
                 else
