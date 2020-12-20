@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SaveManager
   m_EditorClassIdentifier: 
   fileCache:
-    stamp: by 5fdf2c3accbf3400088ed58f at den 20 december 2020 12:54:53
+    stamp: by 5fdf2c3accbf3400088ed58f at den 20 december 2020 17:00:42
     appId: 5fdf2ca1c9f931000847884c
     appName: SlideGame
     versionId: 5fdf2ca1c9f931000847884d
@@ -27,16 +27,6 @@ MonoBehaviour:
       pathsHistory:
       - Assets/Scenes/10.unity
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90ebb
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf2fc939202d00082ad2a3
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e9657cea8d42a8b60ac4
@@ -103,16 +93,6 @@ MonoBehaviour:
       pathsHistory:
       - Assets/Scenes/4.unity
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90eb9
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf32ac622f280008f1b48e
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e9757cea8d42a8b60ac5
@@ -129,16 +109,6 @@ MonoBehaviour:
       pathsHistory:
       - Assets/Scenes/9.unity
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90eba
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf34b4bd02500008b6dd16
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e9657cea8d42a8b60ac4
@@ -185,16 +155,6 @@ MonoBehaviour:
       pathsHistory:
       - Assets/Scenes/11.unity
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90ebc
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf36ef5c68ca00080a2155
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e8d47cea8d42a8b60ac0
@@ -221,16 +181,6 @@ MonoBehaviour:
       pathsHistory:
       - Assets/Scenes/16.unity
       placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf37e9f2562a00089bbb0a
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf37e95c68ca00080a2156
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e8d47cea8d42a8b60ac0
@@ -410,51 +360,26 @@ MonoBehaviour:
     versionSeq: 0
     sdkRev: 2000
     scenesList:
-    - sceneName: Menu
-      id: 5fdf39986b281b0008c4269a
-      currentScenePath: Assets/Scenes/Menu.unity
+    - sceneName: 16
+      id: 5fdf37e95c68ca00080a2156
+      currentScenePath: Assets/Scenes/16.unity
       pathsHistory: []
       placementsList:
       - isSavedPlacement: 1
         invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
+        modelKey: 5ee7e8d47cea8d42a8b60ac0
+        idInFile: 137311346
         placementType: 0
-        placementId: 5fdf399bf24c6e0009c90ea7
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c4269a
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 3
-      id: 5fdf39986b281b0008c4269b
-      currentScenePath: Assets/Scenes/3.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90ea8
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c4269b
-        textureResolution: {x: 320, y: 50}
+        placementId: 5fdf37e9f2562a00089bbb09
+        placementName: 4Vn4vwtq3i2o1JFiE8Nl
+        placementDisplayName: Banner_6x5
+        sceneId: 5fdf37e95c68ca00080a2156
+        textureResolution: {x: 300, y: 250}
     - sceneName: 4
       id: 5fdf32ac622f280008f1b48e
       currentScenePath: Assets/Scenes/4.unity
       pathsHistory: []
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90eb9
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf32ac622f280008f1b48e
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e9757cea8d42a8b60ac5
@@ -465,81 +390,11 @@ MonoBehaviour:
         placementDisplayName: Banner_97x25
         sceneId: 5fdf32ac622f280008f1b48e
         textureResolution: {x: 970, y: 250}
-    - sceneName: 5
-      id: 5fdf39986b281b0008c4269c
-      currentScenePath: Assets/Scenes/5.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eaa
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c4269c
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 6
-      id: 5fdf39986b281b0008c4269d
-      currentScenePath: Assets/Scenes/6.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eab
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c4269d
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 7
-      id: 5fdf39986b281b0008c4269e
-      currentScenePath: Assets/Scenes/7.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eac
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c4269e
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 8
-      id: 5fdf39986b281b0008c4269f
-      currentScenePath: Assets/Scenes/8.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90ead
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c4269f
-        textureResolution: {x: 320, y: 50}
     - sceneName: 9
       id: 5fdf34b4bd02500008b6dd16
       currentScenePath: Assets/Scenes/9.unity
       pathsHistory: []
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90eba
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf34b4bd02500008b6dd16
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e9657cea8d42a8b60ac4
@@ -585,16 +440,6 @@ MonoBehaviour:
       currentScenePath: Assets/Scenes/10.unity
       pathsHistory: []
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90ebb
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf2fc939202d00082ad2a3
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e9657cea8d42a8b60ac4
@@ -660,16 +505,6 @@ MonoBehaviour:
       currentScenePath: Assets/Scenes/11.unity
       pathsHistory: []
       placementsList:
-      - isSavedPlacement: 0
-        invalidReason: orphan
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90ebc
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf36ef5c68ca00080a2155
-        textureResolution: {x: 320, y: 50}
       - isSavedPlacement: 1
         invalidReason: 
         modelKey: 5ee7e8d47cea8d42a8b60ac0
@@ -690,91 +525,6 @@ MonoBehaviour:
         placementDisplayName: Banner_6x5
         sceneId: 5fdf36ef5c68ca00080a2155
         textureResolution: {x: 300, y: 250}
-    - sceneName: 12
-      id: 5fdf39986b281b0008c426a0
-      currentScenePath: Assets/Scenes/12.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eb1
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c426a0
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 13
-      id: 5fdf39986b281b0008c426a1
-      currentScenePath: Assets/Scenes/13.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eb2
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c426a1
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 14
-      id: 5fdf39986b281b0008c426a2
-      currentScenePath: Assets/Scenes/14.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eb3
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c426a2
-        textureResolution: {x: 320, y: 50}
-    - sceneName: 16
-      id: 5fdf37e95c68ca00080a2156
-      currentScenePath: Assets/Scenes/16.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf37e9f2562a00089bbb0a
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf37e95c68ca00080a2156
-        textureResolution: {x: 320, y: 50}
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e8d47cea8d42a8b60ac0
-        idInFile: 137311346
-        placementType: 0
-        placementId: 5fdf37e9f2562a00089bbb09
-        placementName: 4Vn4vwtq3i2o1JFiE8Nl
-        placementDisplayName: Banner_6x5
-        sceneId: 5fdf37e95c68ca00080a2156
-        textureResolution: {x: 300, y: 250}
-    - sceneName: 17
-      id: 5fdf39986b281b0008c426a3
-      currentScenePath: Assets/Scenes/17.unity
-      pathsHistory: []
-      placementsList:
-      - isSavedPlacement: 1
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf399bf24c6e0009c90eb4
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf39986b281b0008c426a3
-        textureResolution: {x: 320, y: 50}
   remoteCache:
     stamp: 
     appId: 5fdf2ca1c9f931000847884c
@@ -849,16 +599,6 @@ MonoBehaviour:
         placementDisplayName: Banner_1x2 (6)
         sceneId: 5fdf2fc939202d00082ad2a3
         textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3a65f24c6e0009c90eb7
-        placementName: o29nlYtH8tPUHzS7bywE
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf2fc939202d00082ad2a3
-        textureResolution: {x: 0, y: 0}
     - sceneName: 4
       id: 5fdf32ac622f280008f1b48e
       currentScenePath: 
@@ -872,16 +612,6 @@ MonoBehaviour:
         placementId: 5fdf32af59450a000893ceb4
         placementName: AYL2Gpktjp9WvvA5DKRc
         placementDisplayName: Banner_97x25
-        sceneId: 5fdf32ac622f280008f1b48e
-        textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3a65f24c6e0009c90eb5
-        placementName: o29nlYtH8tPUHzS7bywE
-        placementDisplayName: Banner_32x5
         sceneId: 5fdf32ac622f280008f1b48e
         textureResolution: {x: 0, y: 0}
     - sceneName: 9
@@ -929,16 +659,6 @@ MonoBehaviour:
         placementDisplayName: Banner_6x5
         sceneId: 5fdf34b4bd02500008b6dd16
         textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3a65f24c6e0009c90eb6
-        placementName: o29nlYtH8tPUHzS7bywE
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf34b4bd02500008b6dd16
-        textureResolution: {x: 0, y: 0}
     - sceneName: 11
       id: 5fdf36ef5c68ca00080a2155
       currentScenePath: 
@@ -964,16 +684,6 @@ MonoBehaviour:
         placementDisplayName: Banner_6x5
         sceneId: 5fdf36ef5c68ca00080a2155
         textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3a65f24c6e0009c90eb8
-        placementName: o29nlYtH8tPUHzS7bywE
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf36ef5c68ca00080a2155
-        textureResolution: {x: 0, y: 0}
     - sceneName: 16
       id: 5fdf37e95c68ca00080a2156
       currentScenePath: 
@@ -987,16 +697,6 @@ MonoBehaviour:
         placementId: 5fdf37e9f2562a00089bbb09
         placementName: 4Vn4vwtq3i2o1JFiE8Nl
         placementDisplayName: Banner_6x5
-        sceneId: 5fdf37e95c68ca00080a2156
-        textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf37e9f2562a00089bbb0a
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
         sceneId: 5fdf37e95c68ca00080a2156
         textureResolution: {x: 0, y: 0}
     - sceneName: Menu
@@ -1223,16 +923,6 @@ MonoBehaviour:
         placementDisplayName: Banner_1x2 (6)
         sceneId: 5fdf2fc939202d00082ad2a3
         textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90ebb
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf2fc939202d00082ad2a3
-        textureResolution: {x: 0, y: 0}
     - sceneName: 4
       id: 5fdf32ac622f280008f1b48e
       currentScenePath: 
@@ -1246,16 +936,6 @@ MonoBehaviour:
         placementId: 5fdf32af59450a000893ceb4
         placementName: AYL2Gpktjp9WvvA5DKRc
         placementDisplayName: Banner_97x25
-        sceneId: 5fdf32ac622f280008f1b48e
-        textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90eb9
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
         sceneId: 5fdf32ac622f280008f1b48e
         textureResolution: {x: 0, y: 0}
     - sceneName: 9
@@ -1303,16 +983,6 @@ MonoBehaviour:
         placementDisplayName: Banner_6x5
         sceneId: 5fdf34b4bd02500008b6dd16
         textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90eba
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf34b4bd02500008b6dd16
-        textureResolution: {x: 0, y: 0}
     - sceneName: 11
       id: 5fdf36ef5c68ca00080a2155
       currentScenePath: 
@@ -1338,16 +1008,6 @@ MonoBehaviour:
         placementDisplayName: Banner_6x5
         sceneId: 5fdf36ef5c68ca00080a2155
         textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf3bb4f24c6e0009c90ebc
-        placementName: wbKrACqeg9iUeLxwTbmH
-        placementDisplayName: Banner_32x5
-        sceneId: 5fdf36ef5c68ca00080a2155
-        textureResolution: {x: 0, y: 0}
     - sceneName: 16
       id: 5fdf37e95c68ca00080a2156
       currentScenePath: 
@@ -1361,16 +1021,6 @@ MonoBehaviour:
         placementId: 5fdf37e9f2562a00089bbb09
         placementName: 4Vn4vwtq3i2o1JFiE8Nl
         placementDisplayName: Banner_6x5
-        sceneId: 5fdf37e95c68ca00080a2156
-        textureResolution: {x: 0, y: 0}
-      - isSavedPlacement: 0
-        invalidReason: 
-        modelKey: 5ee7e90e7cea8d42a8b60ac1
-        idInFile: 0
-        placementType: 0
-        placementId: 5fdf37e9f2562a00089bbb0a
-        placementName: pCytJuEr2bOT14Rin3ex
-        placementDisplayName: Banner_32x5
         sceneId: 5fdf37e95c68ca00080a2156
         textureResolution: {x: 0, y: 0}
     - sceneName: Menu

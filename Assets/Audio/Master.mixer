@@ -51,12 +51,33 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 122159367963815175}
   - {fileID: -7845880579135666384}
+  - {fileID: 504534422957508171}
+  - {fileID: -7614008409207624038}
   m_Volume: bc5bd5c38b7750e47b90a3607ec179a3
   m_Pitch: 1eaaa6795e1f010439126d0671b86717
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -3934624899321110368}
   - {fileID: 4389101601557451302}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &-7614008409207624038
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TrainHonk
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 8cbe342d1002a1045976c149db400785
+  m_Children: []
+  m_Volume: ea10e0590fa3e1141b23cdc0b850b787
+  m_Pitch: 124f3021232f5f54282111534a94e877
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 961339520843497300}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -191,6 +212,8 @@ AudioMixerController:
     - 3820597c5c9e5f1419e9f049538ae8dd
     - e0a123ce34d412147ac6516f64e4d2ac
     - ee4a836a5ae67794f8cd24a381d381a9
+    - 121d6239b871285498b9bc29e4fa1850
+    - 8cbe342d1002a1045976c149db400785
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -247,10 +270,12 @@ AudioMixerSnapshotController:
     bc5bd5c38b7750e47b90a3607ec179a3: -0.41138467
     4ecc55d6c56bce54e9a7dcd900bdac5d: 0.1
     5fdef917b3effab4cbec9fc03702b7be: -80
+    ee7f1177182a4f64a88e5038da4bf7ab: 20
     3fcbf377b151c584cb97d1b7e9323d37: 10
     c42986e77fe8b614396612da5cb9b3f0: -31.4
     6ca91a98a63371940a23bd7cf8a86807: 6.2999997
     6271ad29b1e3b7e49850fd7bc4dfe039: 0
+    ea10e0590fa3e1141b23cdc0b850b787: 9.757735
     219462c958bc4b346b995a395a29c3bd: 0.017
     a282980a3a508f24198a9f7600242f5c: 10
     1a21421a079bec6479bcf7cc59820252: -78.8
@@ -316,6 +341,39 @@ AudioMixerEffectController:
   m_MixLevel: a8adb97e2bd356a4da39160a726f62fe
   m_Parameters: []
   m_SendTarget: {fileID: -3934624899321110368}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &504534422957508171
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Train
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 121d6239b871285498b9bc29e4fa1850
+  m_Children: []
+  m_Volume: ee7f1177182a4f64a88e5038da4bf7ab
+  m_Pitch: 20269a11046b96145be234a58ea53416
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 7442370305448577222}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &961339520843497300
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Attenuation
+  m_EffectID: 00312e7a0071a6e4db44d897bfa0ae88
+  m_EffectName: Attenuation
+  m_MixLevel: cf8ae4ad97ee0a941b032cae57dc47f1
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
 --- !u!244 &2532094229207742758
@@ -433,5 +491,19 @@ AudioMixerEffectController:
   m_MixLevel: 6271ad29b1e3b7e49850fd7bc4dfe039
   m_Parameters: []
   m_SendTarget: {fileID: -3934624899321110368}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &7442370305448577222
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Attenuation
+  m_EffectID: bc1b80d42ea7e344c98d9320d4392178
+  m_EffectName: Attenuation
+  m_MixLevel: df13cdb1d9eae2641929d2a952f10428
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0

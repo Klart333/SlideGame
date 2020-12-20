@@ -478,7 +478,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 314588733}
-        m_MethodName: PlaySoundEffext
+        m_MethodName: PlaySoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
+  soundEffect: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
   playOnAwake: 0
 --- !u!82 &314588734
 AudioSource:
@@ -902,7 +902,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 373057400}
-        m_MethodName: PlaySoundEffext
+        m_MethodName: PlaySoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
+  soundEffect: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
   playOnAwake: 0
 --- !u!82 &373057401
 AudioSource:
@@ -1312,7 +1312,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 637786017}
-        m_MethodName: PlaySoundEffext
+        m_MethodName: PlaySoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
+  soundEffect: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
   playOnAwake: 0
 --- !u!82 &637786018
 AudioSource:
@@ -2497,7 +2497,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1218256301}
-        m_MethodName: PlaySoundEffext
+        m_MethodName: PlaySoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2571,7 +2571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
+  soundEffect: {fileID: 11400000, guid: cf35028eebb9e4144a61e4910f50f082, type: 2}
   playOnAwake: 0
 --- !u!82 &1218256302
 AudioSource:

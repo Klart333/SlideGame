@@ -4,12 +4,12 @@
 public class SoundEffect : MonoBehaviour
 {
     [SerializeField]
-    private SimpleAudioEvent simpleAudioEvent;
+    protected SimpleAudioEvent soundEffect;
 
     [SerializeField]
     private bool playOnAwake;
 
-    private AudioSource audioSource;
+    protected AudioSource audioSource;
 
     private void Awake()
     {
@@ -17,12 +17,12 @@ public class SoundEffect : MonoBehaviour
 
         if (playOnAwake)
         {
-            PlaySoundEffext();
+            PlaySoundEffect();
         }
     }
 
-    public void PlaySoundEffext()
+    public void PlaySoundEffect()
     {
-        simpleAudioEvent.Play(audioSource);
+        soundEffect.Play(audioSource);
     }
 }

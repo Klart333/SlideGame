@@ -43,7 +43,7 @@ public class UIStarManager : MonoBehaviour
         {15, new int[4] { 2000, 4000, 6000, 12000 } },
         {16, new int[4] { 300, 700, 1200, 2500 } },
         {17, new int[4] { 2000, 4000, 6000, 12000 } },
-        {18, new int[4] { 2000, 3000, 5000, 12000 } }
+        {18, new int[4] { 2000, 3000, 5000, 10000 } }
     };
 
     private void Awake()

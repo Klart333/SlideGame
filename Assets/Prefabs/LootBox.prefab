@@ -5049,7 +5049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: c941a8c4d4ba6d44f82a97d1a2896a22, type: 2}
+  soundEffect: {fileID: 11400000, guid: c941a8c4d4ba6d44f82a97d1a2896a22, type: 2}
   playOnAwake: 1
 --- !u!1 &1728069105888109097
 GameObject:
@@ -5191,7 +5191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: 9b9c89fb6044623449b623fa22da3e4e, type: 2}
+  soundEffect: {fileID: 11400000, guid: 9b9c89fb6044623449b623fa22da3e4e, type: 2}
   playOnAwake: 1
 --- !u!1 &2225312937474862295
 GameObject:
@@ -5333,7 +5333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: e3e6473adfd590441b292c96f949d238, type: 2}
+  soundEffect: {fileID: 11400000, guid: e3e6473adfd590441b292c96f949d238, type: 2}
   playOnAwake: 1
 --- !u!1 &3315823073641659043
 GameObject:
@@ -5753,7 +5753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: 6e17bbf0bfbc4dc45ba0be24afe178d5, type: 2}
+  soundEffect: {fileID: 11400000, guid: 6e17bbf0bfbc4dc45ba0be24afe178d5, type: 2}
   playOnAwake: 1
 --- !u!1 &5658856699884919114
 GameObject:

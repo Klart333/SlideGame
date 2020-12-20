@@ -38800,7 +38800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed9e4c722ada0f4386a78914ee124f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleAudioEvent: {fileID: 11400000, guid: 620953985fd5a1749b5806e1ac43a1f4, type: 2}
+  soundEffect: {fileID: 11400000, guid: 620953985fd5a1749b5806e1ac43a1f4, type: 2}
   playOnAwake: 1
 --- !u!82 &6445932438982791184
 AudioSource:
