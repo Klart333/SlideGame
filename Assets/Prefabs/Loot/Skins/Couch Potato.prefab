@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 2152329159907698665}
   - component: {fileID: 4195785567257203491}
   m_Layer: 0
-  m_Name: CouchPotato
+  m_Name: Couch Potato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2394385368296993526}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -108.01, y: 72.36, z: -123.76}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 32, y: 16, z: 32}
   m_Children:
   - {fileID: 8619389237541550494}

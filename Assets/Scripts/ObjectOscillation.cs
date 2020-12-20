@@ -41,7 +41,7 @@ public class ObjectOscillation : MonoBehaviour
                 rigidbody.velocity = new Vector3(0, 0, Mathf.Sin(time)) * movementSpeed;
             }
 
-            yield return new WaitForSeconds(0.01f);
+            yield return null;
         }
     }
 }

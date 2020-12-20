@@ -59,17 +59,33 @@ public class Highscores : MonoBehaviour
 
     private void FormatHighscores(string textStream)
     {
+        if (textStream.Length == 0)
+        {
+            return;
+        }
+
         string[] entries = textStream.Split(new char[] { '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
         highscoreList = new Highscore[entries.Length];
 
-        for (int i = 0; i < entries.Length; i++)
+        if (entries.Length > 0)
         {
-            string[] entryInfo = entries[i].Split(new char[] { '|' });
-            string username = entryInfo[0]; // Still here for clarity that the first thing is the username, but we do not use it
-            int score = int.Parse(entryInfo[1]);
-            int levelIndex = int.Parse(entryInfo[2]);
+            for (int i = 0; i < entries.Length; i++)
+            {
+                string[] entryInfo = entries[i].Split(new char[] { '|' });
+                if (entryInfo.Length < 3)
+                {
+                    return; // Something went wrong and we just abort
+                }
 
-            highscoreList[i] = new Highscore(score, levelIndex);
+                string username = entryInfo[0]; // Still here for clarity that the first thing is the username, but we do not use it
+
+                int score = 0;
+                int.TryParse(entryInfo[1], out score);
+                int levelIndex = 0;
+                int.TryParse(entryInfo[2], out levelIndex);
+
+                highscoreList[i] = new Highscore(score, levelIndex);
+            }
         }
     }
 }

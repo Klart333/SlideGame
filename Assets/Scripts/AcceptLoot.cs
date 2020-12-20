@@ -2,6 +2,9 @@
 
 public class AcceptLoot : MonoBehaviour
 {
+    [HideInInspector]
+    public GameObject lootbox;
+
     private CameraManager cameraManager;
 
     private GameObject lootBoxCanvas;
@@ -26,6 +29,7 @@ public class AcceptLoot : MonoBehaviour
 
             moveCamera.GetComponent<UIMoveCamera>().OnButton();
 
+            Destroy(lootbox);
             Destroy(gameObject);
         }
     }

@@ -24,7 +24,8 @@ public class UIOpenLootBoxText : MonoBehaviour
     {
         UpdateText();
     }
-    private void UpdateText()
+
+    public void UpdateText()
     {
         text.text = string.Format("{0} ({1})", fillerText, LootBoxAmount.GetLootBoxAmount());
     }
