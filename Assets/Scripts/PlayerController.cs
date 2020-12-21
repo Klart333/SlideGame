@@ -50,7 +50,18 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer(float speed)
     {
-        rigidbody.velocity += transform.forward * speed * Time.deltaTime;
+        if (SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            rigidbody.velocity += new Vector3(0, 0, Input.acceleration.z) * speed * Time.deltaTime;
+        }
+        else if (SystemInfo.deviceType == DeviceType.Desktop)
+        {
+            rigidbody.velocity += transform.forward * speed * Time.deltaTime;
+        }
+        else
+        {
+            Debug.LogError("Shit outta luck");
+        }
     }
 
     private bool Grounded()

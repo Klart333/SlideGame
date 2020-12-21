@@ -26,7 +26,7 @@ public class UIStarManager : MonoBehaviour
 
     private Dictionary<int, int[]> levelDictionary = new Dictionary<int, int[]>() // Fourth for a chest
     {
-        {1, new int[4] { 1000, 2000, 3000, 5000 } },
+        {1, new int[4] { 500, 1000, 2000, 3000 } },
         {2, new int[4] { 5000, 7000, 8000, 10000 } },
         {3, new int[4] { 5000, 10000, 15000, 22000 } },
         {4, new int[4] { 250, 500, 700, 1000 } },
@@ -36,7 +36,7 @@ public class UIStarManager : MonoBehaviour
         {8, new int[4] { 2000, 4000, 6000, 10000 } },
         {9, new int[4] { 1000, 2000, 2500, 3500 } },
         {10, new int[4] { 2500, 5000, 8000, 10000 } },
-        {11, new int[4] { 100, 400, 800, 1800 } },
+        {11, new int[4] { 100, 300, 600, 1800 } },
         {12, new int[4] { 5000, 7000, 8000, 10000 } },
         {13, new int[4] { 2000, 5000, 8000, 12000 } },
         {14, new int[4] { 1000, 2000, 5000, 12000 } },
