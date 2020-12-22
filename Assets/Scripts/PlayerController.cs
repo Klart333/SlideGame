@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.acceleration.z < -0.1f)
         {
             if (Grounded())
             {
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
                 MovePlayer(airSpeed);
             }
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) || Input.acceleration.z > 0.1f)
         {
             MovePlayer(reverseSpeed);
         }
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         if (SystemInfo.deviceType == DeviceType.Handheld)
         {
-            rigidbody.velocity += new Vector3(0, 0, Input.acceleration.z) * speed * Time.deltaTime;
+            rigidbody.velocity += transform.forward *  Mathf.Abs(Mathf.Clamp(Input.acceleration.z * 1.5f, -1, 1)) * speed * Time.deltaTime;
         }
         else if (SystemInfo.deviceType == DeviceType.Desktop)
         {

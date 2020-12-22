@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             levelTimer += Time.deltaTime;
         }
     }
-
+    
     private void OnSceneChanged(Scene NullFuckingScene, Scene sceneToBe)
     {
         FindObjectOfType<FadePanel>().StartCoroutine(FindObjectOfType<FadePanel>().FadeIn());

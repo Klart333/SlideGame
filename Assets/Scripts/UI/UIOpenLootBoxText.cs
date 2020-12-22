@@ -13,6 +13,12 @@ public class UIOpenLootBoxText : MonoBehaviour
     {
         text = GetComponent<TextMeshProUGUI>();
         UpdateText();
+
+        AdsManager adsManager = FindObjectOfType<AdsManager>();
+        if (adsManager != null)
+        {
+            adsManager.onAdFinished += UpdateText;
+        }
     }
 
     private void Start()

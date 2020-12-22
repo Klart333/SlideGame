@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
 public class AdsManager : MonoBehaviour, IUnityAdsListener
 {
+    public event Action onAdFinished = delegate { };
 
     private void Start()
     {
@@ -31,6 +33,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             LootBoxAmount.SetLootBoxAmount(1);
+            onAdFinished();
         }
     }
 
